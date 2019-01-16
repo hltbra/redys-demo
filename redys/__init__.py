@@ -17,7 +17,7 @@ def to_resp(data):
             for e in elem:
                 _to_resp(e)
         else:
-            raise TypeError("cant figure out type of {}".format(repr(elem)))
+            result.append("-ERROR: cant figure out type of {}\r\n".format(repr(elem)))
 
     _to_resp(data)
     return ''.join(result)

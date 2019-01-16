@@ -13,6 +13,8 @@ class CommandHandler(asyncore.dispatcher):
     def handle_read(self):
         data = self.recv(10000)
         print("[debug] data = %r" % data)
+        if not data:
+            return
         commands = from_resp(data)
         for cmd in commands:
             result = execute_command(*cmd)
