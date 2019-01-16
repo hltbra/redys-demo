@@ -18,3 +18,7 @@ def test_array():
     assert to_resp([
         [1]
     ]) == '*1\r\n*1\r\n:1\r\n'
+
+
+def test_unknown_types():
+    assert to_resp({}) == '-unknown type'

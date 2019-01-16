@@ -30,28 +30,31 @@ class Buffer(object):
 def from_resp(data):
     result = []
     buf = Buffer(data)
-
     while not buf.empty():
         first_char = buf.advance(1)
         if first_char == '*':
-            cmd_size = buf.advance_to_crlf()
             subresult = []
-            for _ in range(int(cmd_size)):
-                buf.advance(1)  # skip '$'
-                msg_size = buf.advance_to_crlf()
-                subresult.append(buf.advance(int(msg_size)))
+            array_length = buf.advance_to_crlf()
+            for _ in range(int(array_length)):
+                buf.advance(1)
+                str_length = buf.advance_to_crlf()
+                subresult.append(buf.advance(int(str_length)))
                 buf.advance_to_crlf()
             result.append(subresult)
         else:
-            command = buf.advance_to_crlf()
-            result.append([first_char + command])
-
+            result.append([first_char + buf.advance_to_crlf()])
     return result
+
 
 
 def to_resp(data):
     result = []
-
+    # simple string
+    # errors
+    # integers
+    # bulk strings
+    # arrays
+    # nil
     def _to_resp(elem):
         if elem is None:
             result.append('$-1\r\n')
@@ -60,11 +63,12 @@ def to_resp(data):
         elif isinstance(elem, basestring):
             result.append('${}\r\n{}\r\n'.format(len(elem), elem))
         elif isinstance(elem, list):
-            result.append('*{}\r\n'.format(len(elem)))
+            elem_length = len(elem)
+            result.append('*{}\r\n'.format(elem_length))
             for e in elem:
                 _to_resp(e)
         else:
-            result.append("-ERROR: cant figure out type of {}\r\n".format(repr(elem)))
-
+            result.append('-unknown type')
     _to_resp(data)
     return ''.join(result)
+

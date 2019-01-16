@@ -4,8 +4,56 @@ import socket
 from redys import to_resp, from_resp
 
 
+class Database(object):
+
+    _DB = {}
+
+    def set(self, key, value):
+        # with open('/tmp/{}'.format(key), 'w') as f:
+        #     f.write(value)
+        self._DB[key] = value
+
+    def get(self, key):
+        # with open('/tmp/{}'.format(key), 'r') as f:
+        #     return f.read()
+        return self._DB.get(key)
+
+    def clear(self):
+        # return
+        self._DB.clear()
+
+
+DB = Database()
+
+
 def execute_command(cmd_name, *args):
-    return 'PONG'
+    if cmd_name.lower() == 'flushall':
+        DB.clear()
+        return 'OK'
+    if cmd_name.lower() == 'get':
+        result = DB.get(args[0])
+        if result is None:
+            return result
+        else:
+            return str(result)
+    if cmd_name.lower() == 'set':
+        DB.set(args[0], args[1])
+        return 'OK'
+    if cmd_name.lower() == 'ping':
+        return 'PONG'
+    if (
+            cmd_name.lower() == 'incr' or
+            cmd_name.lower() == 'incrby'
+    ):
+        current_value = DB.get(args[0])
+        try:
+            current_value = int(current_value)
+        except TypeError:
+            current_value = 0
+        result = current_value + 1
+        DB.set(args[0], result)
+        return result
+    return '-invalid command'
 
 
 class CommandHandler(asyncore.dispatcher):
