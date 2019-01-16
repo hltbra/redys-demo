@@ -2,7 +2,7 @@ from redys import from_resp
 
 
 def test_parse_simple_string():
-    result = from_resp("+PING\r\n")
+    result = from_resp("PING\r\n")
     assert result == [['PING']]
 
 

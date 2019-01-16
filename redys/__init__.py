@@ -30,13 +30,10 @@ class Buffer(object):
 def from_resp(data):
     result = []
     buf = Buffer(data)
-    while not buf.empty():
-        msg_type = buf.advance(1)
 
-        if msg_type == '+':
-            command = buf.advance_to_crlf()
-            result.append([command])
-        elif msg_type == '*':
+    while not buf.empty():
+        first_char = buf.advance(1)
+        if first_char == '*':
             cmd_size = buf.advance_to_crlf()
             subresult = []
             for _ in range(int(cmd_size)):
@@ -46,7 +43,8 @@ def from_resp(data):
                 buf.advance_to_crlf()
             result.append(subresult)
         else:
-            raise TypeError("invalid message %r" % data)
+            command = buf.advance_to_crlf()
+            result.append([first_char + command])
 
     return result
 
