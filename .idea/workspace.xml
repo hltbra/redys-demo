@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe67a5b6-10b4-43f2-998c-10150c9e9bf1" name="Default Changelist" comment="" />
+    <list default="true" id="fe67a5b6-10b4-43f2-998c-10150c9e9bf1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/integration/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/integration/test_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redys/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/redys/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redys/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/redys/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/integration/test_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/test_strings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,46 +18,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/unit/test_to_resp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/unit/test_from_resp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redys/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="19" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/integration/test_commands.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/redys/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="379">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -59,10 +30,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Makefile">
+        <entry file="file://$PROJECT_DIR$/tests/integration/test_strings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="6" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/integration/helpers.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/integration/test_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redys/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -82,15 +76,23 @@
       <find>'PING'</find>
       <find>ping(self,</find>
       <find>ping</find>
+      <find>handle_close</find>
+      <find>def handle_close</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/tests/integration/test_commands.py" />
         <option value="$PROJECT_DIR$/redys/__init__.py" />
         <option value="$PROJECT_DIR$/redys/server.py" />
+        <option value="$PROJECT_DIR$/tests/integration/test_commands.py" />
+        <option value="$PROJECT_DIR$/tests/integration/helpers.py" />
+        <option value="$PROJECT_DIR$/tests/integration/test_strings.py" />
+        <option value="$PROJECT_DIR$/tests/integration/test_server.py" />
       </list>
     </option>
   </component>
@@ -99,6 +101,7 @@
     <option name="width" value="1632" />
     <option name="height" value="1027" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -115,6 +118,17 @@
               <item name="redis-from-scratch" type="b2602c69:ProjectViewProjectNode" />
               <item name="redis-from-scratch" type="462c0819:PsiDirectoryNode" />
               <item name="redys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-from-scratch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-from-scratch" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-from-scratch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-from-scratch" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -204,18 +218,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="all - 2019.01.16 at 15h 13m 47s.xml">
-      <configuration name="all" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_integration_test_commands - 2019.01.16 at 15h 13m 55s.xml">
-      <configuration name="pytest for integration.test_commands" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_integration_test_commands - 2019.01.16 at 15h 14m 43s.xml">
-      <configuration name="pytest for integration.test_commands" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_integration_test_commands - 2019.01.16 at 15h 16m 15s.xml">
-      <configuration name="pytest for integration.test_commands" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_integration_test_commands - 2019.01.16 at 15h 16m 25s.xml">
       <configuration name="pytest for integration.test_commands" configurationId="tests" />
     </history-entry>
@@ -234,13 +236,25 @@
     <history-entry file="pytest_for_integration_test_commands - 2019.01.16 at 15h 19m 38s.xml">
       <configuration name="pytest for integration.test_commands" configurationId="tests" />
     </history-entry>
+    <history-entry file="integration - 2019.01.16 at 15h 43m 51s.xml">
+      <configuration name="integration" configurationId="tests" />
+    </history-entry>
+    <history-entry file="integration - 2019.01.16 at 15h 44m 09s.xml">
+      <configuration name="integration" configurationId="tests" />
+    </history-entry>
+    <history-entry file="integration - 2019.01.16 at 15h 44m 36s.xml">
+      <configuration name="integration" configurationId="tests" />
+    </history-entry>
+    <history-entry file="integration - 2019.01.16 at 15h 44m 40s.xml">
+      <configuration name="integration" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15833005" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15833005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -248,7 +262,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32981133" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -290,27 +304,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redys/__init__.py">
+    <entry file="file:///usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/asyncore.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="19" selection-end-column="76" />
+        <state relative-caret-position="298">
+          <caret line="519" column="20" selection-start-line="519" selection-start-column="4" selection-end-line="519" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/integration/test_commands.py">
+    <entry file="file://$PROJECT_DIR$/redys/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="418">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/redys/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="379">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/integration/test_strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/integration/helpers.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/integration/test_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
