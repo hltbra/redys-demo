@@ -2,7 +2,7 @@ import redis
 
 
 def get_redis():
-    r = redis.StrictRedis('localhost', 6379)
+    r = redis.StrictRedis('localhost', 6380)
     r.flushall()
     return r
 
